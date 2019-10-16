@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Are you smarter than a bootcamper?</title>
+</head>
+
+<body>
+    
+    <!--These are the audio files that play when users answer a questions-->
+    <audio id="correct" src="assets/sounds/correct.mp3"></audio>
+    <audio id="wrong" src="assets/sounds/wrong.mp3"></audio>
+
+    <!--This heading sections contains the VIEW HI-SCORES option and TIMER-->
+    <header>
+        <button id="viewHiScore">View High Scores</button>
+        <div id="timer">Time: <span id="counter">0</span></div>
+    </header>
+
+    <div id="mainContainer">
+        <!--This contains all interchangeable sections-->
+
+        <!--This section contains instructions block and quiz initializer. 
+        Is ther first thing users see. It will hide after user starts quiz-->
+        <div id="initQuiz">
+            <h1 id="instructionsTitle">Instructions: </h1>
+            <div class="instructions">This quiz has five multiple-choice questions. You will have 75 seconds to complete
+                the quiz. Every correct answer is worth 100 points. Every wrong answer will substract 15 seconds from
+                your time.You will be awarded 10 points for every remaining second at the end of the quiz. Have fun!!!
+            </div>
+            <hr>
+            <div id="btnStart">
+                <button id="jsQuizStart">Start Quiz</button>
+            </div>
+        </div>
+
+        <!--This section contains the questions and answer buttons. 
+    It shows when quiz starts and hides when the quiz is over-->
+        <div id="playQuiz" class="hidden">
+            <h1 id="qTitle"></h1>
+            <hr>
+            <button id="ansOne" class="answers">Answer 1</button>
+            <button id="ansTwo" class="answers">Answer 2</button>
+            <button id="ansThree" class="answers">Answer 3</button>
+            <button id="ansFour" class="answers">Answer 4</button>
+            <hr>
+            <div id="ansResult"></div>
+        </div>
+
+        <!--This section shows the final score. It shows when the quiz ends.-->
+        <div id="score">
+            <div>
+                <h1 id="yourScoreTitle">SCORE: <span id="yourScoreNum"></span></h1>
+            </div>
+            <fieldset>
+                <label for="initials" class="initialsLabel">Enter your initials</label>
+                <input id="enterInitials" name="initials">
+                <p id="errorMessage"></p>
+                <button id="initialsSubmit">Submit</button>
+            </fieldset>
+        </div>
+
+        <!--This section shows the high scores when user selects option. Hides when user clicks on X-->
+        <div id="hiScores">
+            <h2 id="yourScore"></h2>
+            <br><hr><br>
+            <h1 id="hiScoresTitle">HIGH SCORES</h1>
+            <div id="hiScoresDetails"></div>
+            <div id="hiScoreBtns">
+                <button id="btnReturn">Back to Quiz</button>
+                <button id="btnClear">Clear Scores</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/sctipts/questions.js"></script>
+    <!-- <script src="assets/sctipts/script.js"></script> -->
+    <script src="assets/sctipts/init.js"></script>
+
+
+</body>
+
+</html>

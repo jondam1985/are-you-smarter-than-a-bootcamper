@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    color: white;
+}
+
+header {
+    display: flex;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#mainContainer {
+    width: 75%;
+    margin: 0 auto;
+}
+/*
+#viewHiScore, 
+*/
+#timer {
+    width: 50%;
+    padding: 15px 50px 0 50px;
+    background-color: transparent;
+    border: none;
+}
+
+#viewHiScore {
+    margin: 10px 30px;
+    height: 50px;
+    color: black;
+}
+
+
+#timer {
+    position: absolute;
+    left: 70%;
+}
+
+#initQuiz, 
+#playQuiz, 
+#score,
+#hiScores {
+    width: 75%;
+    margin: 20px auto 20px auto;
+    padding: 10px;
+}
+
+#hiScoresDetails {
+    margin: 0 auto;
+}
+
+#instructionsTitle, 
+#qTitle, 
+#qNum, 
+#yourScoreTitle, 
+#yourScoreNum, 
+#hiScoresTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.instructions, 
+#qText {
+    margin-bottom: 10px;
+}
+
+#btnStart {
+    width: 100%;
+    text-align: center;
+}
+
+#jsQuizStart {
+    width: 50%;
+    height: 50px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+}
+
+.answers {
+    display: block;
+    width: 30%;
+    height: 30px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 20px;
+    background-color: blue;
+}
+
+#ansResult {
+    display: block;
+    margin-top: 20px;
+    width: 25%;
+    height: 30px;
+    color: grey;
+    font-size: 16px;
+}
+
+#score {
+    text-align: center;
+}
+
+fieldset {
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+}
+
+#initialsSubmit {
+    display: block;
+    background-color: blue;
+    border: none;
+    width: 30%;
+    height: 40px;
+    border-radius: 310px;
+    margin: 10px auto
+}
+
+#errorMessage {
+    height: 20px;
+    font-size: 14px;
+    color: grey;
+}
+
+#hiScores {
+    text-align: center;
+}
+
+#hiScoresDetails {
+    width: 75%; 
+}
+
+#hiScoreBtns {
+    display: flex;
+    justify-content: space-between;
+}
+
+#btnReturn,
+#btnClear {
+    width: 40%;
+    height: 40px;
+    border: none;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
