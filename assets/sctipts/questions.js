@@ -26,31 +26,3 @@ var jsQuestions = [
         answer: "myarr is not defined"
     }
 ]
-
-var htmlQuestions = [
-    {
-        title: "Which of the following is wrong?",
-        choices: ["<img></img>", "<p></p>", "<h6></h6>", "<section></section>"],
-        answer: "<img></img>"
-    },
-    {
-        title: "What does HTML stand for?",
-        choices: ["Home Tool Markup Language", "Hyper Text Markup Language", "Hyper Links Markup Language", "None of the above"],
-        answer: "Hyper Text Markup Language"
-    },
-    {
-        title: "Which of the following elements will generate the largest heading?",
-        choices: ["<h1>", "<heading>", "<h3>", "<head>"],
-        answer: "<h1>"
-    },
-    {
-        title: "How can you make a numbered list?",
-        choices: ["<ul>", "<nl>", "<ol>", "<list>"],
-        answer: "<ol>"
-    },
-    {
-        title: "How do you add comments in HTML?",
-        choices: ["//comment", "<!-- comment -->", "/* comment */", "__comment__"],
-        answer: "<!-- comment -->"
-    }
-]
